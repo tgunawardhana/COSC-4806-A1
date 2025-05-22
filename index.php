@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>COSC 4806</title>
   </head>
   <body>
-    <?php echo '<p>First PHP code</p>'; ?> 
+  
+    <h1>Assignment 1</h1>
+  
   </body>
 </html>
