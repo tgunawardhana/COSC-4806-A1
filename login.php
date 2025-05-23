@@ -1,3 +1,14 @@
+<?php
+  session_start();
+  
+  if ($_SESSION['failed'] == 0) {
+    $failed = "Username or password is incorrect.";
+  }
+  else {
+    $failed = "";
+  }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,6 +28,8 @@
       <input type="password" id="password" name="password">
       <br><br>
       <input type="submit" value="Submit">
+      <br>
+      <p style="color:red;"><?= $failed ?></p>
     </form>
 
   </body>
