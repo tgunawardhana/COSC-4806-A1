@@ -15,7 +15,7 @@
     <h1>Assignment 1</h1>
 
     <p>Welcome, <?= $_SESSION['username'] ?>!</p>
-    <h4> <?= </h4>
+    <p> <?= date("Y-M-d") ?> </p>
     
     <p> <a href="/login.php">Click here to login</a> </p>
   
