@@ -22,7 +22,7 @@ if ($valid_username == $username && $valid_password == $password){
   
     $_SESSION['failed'] = 1;  
     header("location: /login.php");
-    echo "This is unsuccessful attempt number " . $_SESSION['failed_attempts'];
+    //echo "This is unsuccessful attempt number " . $_SESSION['failed_attempts'];
 
 }
 
