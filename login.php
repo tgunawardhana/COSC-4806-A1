@@ -7,7 +7,7 @@
   else {
     $failed = "";
   }
-  
+
 ?>
 
 <!DOCTYPE html>
