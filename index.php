@@ -16,9 +16,10 @@
 
     <p>Welcome, <?= $_SESSION['username'] ?>!</p>
     <p> <?= date("Y-M-d") ?> </p>
-    
+
+    <!--
     <p> <a href="/login.php">Click here to login</a> </p>
-  
+    -->
   </body>
 
   <footer>
