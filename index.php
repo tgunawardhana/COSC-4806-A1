@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  if (!$_SESSION['authenticated'] = 1) {
+  if ($_SESSION['authenticated'] !== 1) {
       header("location: /login.php");
   }
   
@@ -21,4 +21,8 @@
     <p> <a href="/login.php">Click here to login</a> </p>
   
   </body>
+
+  <footer>
+    <p> <a href="/logout.php">Logout</a> </p>
+  </footer>
 </html>
