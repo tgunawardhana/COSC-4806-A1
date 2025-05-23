@@ -1,15 +1,25 @@
 <?php
 
+session_start();
+
 $valid_username = "teddy";
 $valid_password = "rules";
 
 $username = $_REQUEST['username'];
+$_SESSION['username'] = $username;
 $password = $_REQUEST['password'];
 
 if ($valid_username == $username && $valid_password == $password){
-    echo "Welcome $username";
+    header("location: /");
 } else {
-    echo "Invalid username or password";
+    if(!isset($_SESSION['failed_attempts'])){
+        $_SESSION['failed_attempts'] = 1;
+    } else {
+      $_SESSION['failed_attempts'] += 1;
+    }
+
+   echo "This is unsuccessful attempt number " . $_SESSION['failed_attempts'];
+
 }
 
 ?>
