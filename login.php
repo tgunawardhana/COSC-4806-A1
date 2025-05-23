@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  if ($_SESSION['failed'] == 1) {
+  if (isset($_SESSION['failed']) && $_SESSION['failed'] == 1) {
     $failed = "Username or password is incorrect.";
   }
   else {

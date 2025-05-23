@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if ($_SESSION['authenticated'] != 1){
+  if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] != 1){
     header("location: /login.php");
   }
 ?>
@@ -15,6 +15,7 @@
     <h1>Assignment 1</h1>
 
     <p>Welcome, <?= $_SESSION['username'] ?>!</p>
+    <h4> <?= </h4>
     
     <p> <a href="/login.php">Click here to login</a> </p>
   
