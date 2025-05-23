@@ -1,3 +1,12 @@
+<?php
+  session_start();
+
+  if (!$_SESSION['authenticated'] = 1) {
+      header("location: /login.php");
+  }
+  
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +16,8 @@
   
     <h1>Assignment 1</h1>
 
+    <p>Welcome, <?= $_SESSION['username'] ?>!</p>
+    
     <p> <a href="/login.php">Click here to login</a> </p>
   
   </body>
